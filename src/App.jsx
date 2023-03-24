@@ -6,7 +6,7 @@ import { paths } from "./paths";
 
 function App() {
   return (
-    <div className="App border-2 border-red-500">
+    <div className="App border-2 border-red-500 bg-bgRadialGradient min-h-screen">
       <RoutesContainer />
     </div>
   );
