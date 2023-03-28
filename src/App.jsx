@@ -6,7 +6,7 @@ import { paths } from "./paths";
 
 function App() {
   return (
-    <div className="App border-2 border-red-500 bg-bgRadialGradient min-h-screen">
+    <div className="w-full">
       <RoutesContainer />
     </div>
   );
@@ -16,6 +16,7 @@ function RoutesContainer() {
   return (
     <Routes>
       <Route element={<pages.Home />} path={paths.home} />
+      <Route element={<pages.GamePage />} path={paths.playGame} />
     </Routes>
   );
 }

@@ -1,0 +1,29 @@
+.w-90 {
+  width: 90%;
+}
+
+button {
+  outline: none;
+  border: 0;
+}
+
+/* modal */
+.modal {
+  z-index: 4;
+}
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(6px);
+  ::-webkit-backdrop-filter: blur(6px);
+}
+
+.modal-content {
+  width: 100%;
+}
+
+@media only screen and (min-width: 540px) {
+  .modal-content {
+    max-width: 400px;
+  }
+}
