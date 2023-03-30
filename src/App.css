@@ -10,7 +10,7 @@
   --scale-1: 1;
   --scale-2: 0.6;
   --sm: calc(0.825rem * var(--scale-1));
-  --md: calc(3rem * var(--scale-2));
+  --md: calc(4.5rem * var(--scale-2));
   --md2: 1rem;
 }
 
@@ -20,11 +20,11 @@ body {
 }
 
 .home-body {
-  font-family: "Press Start 2P", cursive;
+  font-family: "Odibee Sans", cursive;
 }
 
 .logo {
-  font-size: var(--sm);
+  font-size: 24px;
 }
 
 .welcome h1 {
