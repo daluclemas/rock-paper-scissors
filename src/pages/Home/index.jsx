@@ -25,13 +25,13 @@ const index = () => {
             <h1 className="capitalize logo">rock, paper,scissors</h1>
           </header>
 
-          <section className="w-full flex flex-col-reverse md:flex-row  h-full md:gap-10 md:items-center md:justify-between mt-5 md:mt-[80px]">
-            <div className="w-full md:w-1/2 welcome mt-5 md:mt-0">
+          <section className="w-full flex flex-col-reverse md:flex-row  h-full md:gap-10 md:items-center md:justify-between mt-[60px] md:mt-[80px]">
+            <div className="w-full md:w-1/2 welcome mt-[45px] md:mt-0">
               <h1 className="capitalize text-center md:text-left welcome-text my-2">
                 welcome players.
               </h1>
 
-              <p className="text-center md:text-left text-sm w-full md:w-[90%] 2md:w-[80%]">
+              <p className="text-center md:text-left text-base w-full md:w-[90%] 2md:w-[80%]">
                 Please enter your name to start
               </p>
 
@@ -54,7 +54,7 @@ const index = () => {
         </div>
       </section>
 
-      <footer className="w-90 mx-auto text-white">
+      <footer className="w-90 mx-auto text-white mt-[35px]">
         <p className="capitalize text-sm" style={{ letterSpacing: "2px" }}>
           &copy; {date.getFullYear()} all rights reserved.
         </p>
