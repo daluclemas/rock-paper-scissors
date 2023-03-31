@@ -1,6 +1,6 @@
 import React from "react";
 
-const Scoreboard = () => {
+const Scoreboard = ({ playerScore }) => {
   return (
     <div className="score border-2 border-headerOutline flex items-center py-2 px-5 rounded-lg">
       <div className="texts w-1/2">
@@ -18,7 +18,7 @@ const Scoreboard = () => {
           </p>
 
           <p className="score-text text-dark text-center font-bold m-0 p-0">
-            12
+            {playerScore}
           </p>
         </div>
       </div>

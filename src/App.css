@@ -80,9 +80,21 @@ body {
   margin: 20px auto;
 }
 
+.gamePlayedRock {
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%)) border-box;
+  margin: 20px auto;
+}
+
 .paperGradient {
   background: linear-gradient(white, white) padding-box,
     linear-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%)) border-box;
+}
+
+.gamePlayedPaper {
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%)) border-box;
+  margin: 20px auto;
 }
 
 .scissorsGradient {
@@ -90,9 +102,15 @@ body {
     linear-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%)) border-box;
 }
 
+.gamePlayedScissors {
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%)) border-box;
+  margin: 20px auto;
+}
+
 .btn-wrapper {
   z-index: 2;
-  margin-top: 100px;
+  margin-top: 60px;
 }
 
 .icons-wrapper:after {
@@ -118,9 +136,21 @@ body {
   transform: rotate(90deg) translateX(-10px);
 }
 
+.mobile-scores {
+  display: flex;
+}
+
+.desktop-scores {
+  display: none;
+}
+
 @media (min-width: 479px) {
   .score {
     @apply max-w-[400px];
+  }
+
+  .gamePlayed {
+    @apply max-w-[450px];
   }
 }
 
@@ -132,6 +162,28 @@ body {
 
   .score-text {
     font-size: 36px;
+  }
+
+  .gamePlayed {
+    @apply max-w-[700px];
+  }
+
+  .icons-wrapper {
+    border-width: 15px;
+  }
+
+  .icons-wrapper:after {
+    height: 100px;
+    border-width: 6px;
+  }
+
+  .paperGradient::after {
+    top: 60px;
+    transform: skewX(30deg) translateX(-45px) translateY(45px);
+  }
+
+  .btn-wrapper {
+    margin-top: 30px;
   }
 }
 
@@ -150,5 +202,13 @@ body {
 
   .score-text {
     font-size: 40px;
+  }
+
+  .mobile-scores {
+    display: none;
+  }
+
+  .desktop-scores {
+    display: flex;
   }
 }
